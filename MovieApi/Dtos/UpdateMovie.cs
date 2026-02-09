@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace MovieApi.Dtos
 {
     public class UpdateMovie

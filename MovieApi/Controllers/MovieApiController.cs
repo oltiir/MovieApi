@@ -49,7 +49,35 @@ public class MovieApiController : ControllerBase
         return CreatedAtAction(nameof(GetMovie), new { id = newMovie.Id }, newMovie);
 
     }
-   //[HttpPut("{id}")]
-   //[HttpDelete("{id}")]
+   [HttpPut("{id}")]
+   public async Task<IActionResult> UpdateMovie(int id, UpdateMovie updateMovie)
+    {
+        var dbMovie = await _context.Movies.FindAsync(id);
+        if(dbMovie == null)
+        {
+            return NotFound($"Movie with id {id} doesnt exist.");
+        }
+        dbMovie.Title = updateMovie.Title;
+        dbMovie.Director = updateMovie.Director;
+        dbMovie.DurationMinutes = updateMovie.DurationMinutes;
+        dbMovie.Rating = updateMovie.Rating;
+
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
+   [HttpDelete("{id}")]
+   public async Task<IActionResult> DeleteMovie(int id)
+    {
+        var movie = await _context.Movies.FindAsync(id);
+        if(movie == null)
+        {
+            return NotFound($"The movie with id {id} doesnt exist.");
+        }
+
+        _context.Movies.Remove(movie);
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
 
 }
