@@ -39,3 +39,11 @@
 /home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+/home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+/home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+/home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+/home/olti/Documents/life/Periudha 2/BackEnd Intro/MovieAPI/MovieApi/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll

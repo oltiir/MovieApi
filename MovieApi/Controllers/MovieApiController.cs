@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MovieApi.Models;
 using MovieApi.Persistence;
 using MovieApi.Dtos;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MovieApi.Controllers;
 
@@ -34,6 +35,7 @@ public class MovieApiController : ControllerBase
         return movie;
     }
    [HttpPost]
+   [Authorize]
    public async Task<ActionResult<Movie>> CreateMovie(CreateMovie createMovie)
     {
         var newMovie = new Movie
@@ -50,6 +52,7 @@ public class MovieApiController : ControllerBase
 
     }
    [HttpPut("{id}")]
+   [Authorize]
    public async Task<IActionResult> UpdateMovie(int id, UpdateMovie updateMovie)
     {
         var dbMovie = await _context.Movies.FindAsync(id);
@@ -66,6 +69,7 @@ public class MovieApiController : ControllerBase
         return NoContent();
     }
    [HttpDelete("{id}")]
+   [Authorize]
    public async Task<IActionResult> DeleteMovie(int id)
     {
         var movie = await _context.Movies.FindAsync(id);
